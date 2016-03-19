@@ -1,6 +1,6 @@
 {
   "name": "AvocadOS",
   "tagline": "A Revolutionary OS running jQuery",
-  "body": "### What AvocadOS?\r\n\r\nAvacad**os**, stylized as **AvocadOS**, is a minimal operating system designed to run almost pure jQuery.\r\n\r\n### The name?\r\n\r\nThe name, formerly **jQueryOS**, originates from a [meme][meme] on [Programming Puzzles & Code Golf][codegolf]\r\n\r\n> i sad i try for thirry minut and no juic for avocad still no work  \r\n> &#09; - PPCG\r\n\r\n  [meme]: https://en.wikipedia.org/wiki/Meme\r\n  [codegolf]: (http://codegolf.stackexchange.com)",
+  "body": "### What AvocadOS?\r\n\r\nAvacad**os**, stylized as **AvocadOS**, is a minimal operating system designed to run almost pure jQuery.\r\n\r\n### The name?\r\n\r\nThe name, formerly **jQueryOS**, originates from a [meme][meme] on [Programming Puzzles & Code Golf][codegolf]\r\n\r\n> i sad i try for thirry minut and no juic for avocad still no work\r\n\r\n> &#09; - PPCG\r\n\r\n  [meme]: https://en.wikipedia.org/wiki/Meme\r\n  [codegolf]: (http://codegolf.stackexchange.com)",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
 }
