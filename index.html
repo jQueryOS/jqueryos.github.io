@@ -1,34 +1,456 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>AvocadOS</title>
-    <link rel="stylesheet" href="https://bootswatch.com/sandstone/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css"><style>#logo{height:auto;width:400px}blockquote footer:before, blockquote small:before, blockquote .small:before{margin-left: 2em}</style>
-  </head>
-  <body>
-    <div class="container-fluid text-center jumbotron"><img id="logo" src="avocadOS.png">
-      <p>A Revolutionary Operating System Running jQuery</p><a href="https://github.com/jQueryOS" class="btn btn-default">
-        <h4><i class="fa fa-github"></i>&nbsp;&nbsp;Star on Github!</h4></a>
-    </div>
-    <div class="container">
-      <h1>What AvocadOS?</h1>
-      <p>Avacad<b>os</b>, stylized as <b>AvocadOS</b>, is a minimal operating system designed to run almost pure jQuery.</p>
-      <h1>The name?</h1>
-      <p>Formerly jQueryOS, the name was changed to AvocadOS. It is based on a <a href="https://en.wikipedia.org/wiki/Meme">meme</a> from <a href="http://codegolf.stackexchange.com">Programming Puzzles & Code Golf</a>:
-        <blockquote>
-          <p><a href="http://avocad.ppcg.lol"> hello i have quetions how does juice an avocado i have try for thirtee minut and no juic</a></p><small>user46049, avocado juice fanatic</small>
-        </blockquote>
-      </p>
-      <h1>The AvocadOS Manifesto</h1>
-      <p>AvocadOS is great and does all the things.
-        <ol>
-          <li>jQuery is the best-quality code ever. If you don't use jQuery you're an idiot.</li>
-          <li>Only jQuery, otherwise not enough jQuery!</li>
-          <li>jQuery is definitely the way to go.</li>
-        </ol>
-      </p>
-    </div>
-  </body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>AvocadOS | Website</title>
+
+        <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link href="css/freelancer.css" rel="stylesheet">
+
+        <!-- Custom Fonts -->
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+        <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+    </head>
+
+    <body id="page-top" class="index">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#page-top">AvocadOS</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="hidden">
+                            <a href="#page-top"></a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="#about">About</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+
+        <!-- Header -->
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <img class="img-responsive" src="img/profile.svg" alt="">
+                        <div class="intro-text">
+                            <span class="name">AvocadOS</span>
+                            <hr class="star-light">
+                            <span class="skills">A Revolutionary Operating System Running jQuery</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Portfolio Grid Section -->
+        <section id="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2>Roadmap</h2>
+                        <hr class="star-primary">
+                    </div>
+                </div>
+                <div class="row">
+
+                    <style>
+                        .timeline {
+                            list-style: none;
+                            padding: 20px 0 20px;
+                            position: relative;
+                        }
+                        .timeline:before {
+                            top: 0;
+                            bottom: 0;
+                            position: absolute;
+                            content: " ";
+                            width: 3px;
+                            background-color: #eeeeee;
+                            left: 50%;
+                            margin-left: -1.5px;
+                        }
+                        .timeline > li {
+                            margin-bottom: 20px;
+                            position: relative;
+                        }
+                        .timeline > li:before,
+                        .timeline > li:after {
+                            content: " ";
+                            display: table;
+                        }
+                        .timeline > li:after {
+                            clear: both;
+                        }
+                        .timeline > li:before,
+                        .timeline > li:after {
+                            content: " ";
+                            display: table;
+                        }
+                        .timeline > li:after {
+                            clear: both;
+                        }
+                        .timeline > li > .timeline-panel {
+                            width: 46%;
+                            float: left;
+                            border: 1px solid #d4d4d4;
+                            border-radius: 2px;
+                            padding: 20px;
+                            position: relative;
+                            -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+                            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+                        }
+                        .timeline > li > .timeline-panel:before {
+                            position: absolute;
+                            top: 26px;
+                            right: -15px;
+                            display: inline-block;
+                            border-top: 15px solid transparent;
+                            border-left: 15px solid #ccc;
+                            border-right: 0 solid #ccc;
+                            border-bottom: 15px solid transparent;
+                            content: " ";
+                        }
+                        .timeline > li > .timeline-panel:after {
+                            position: absolute;
+                            top: 27px;
+                            right: -14px;
+                            display: inline-block;
+                            border-top: 14px solid transparent;
+                            border-left: 14px solid #fff;
+                            border-right: 0 solid #fff;
+                            border-bottom: 14px solid transparent;
+                            content: " ";
+                        }
+                        .timeline > li > .timeline-badge {
+                            color: #fff;
+                            width: 50px;
+                            height: 50px;
+                            line-height: 50px;
+                            font-size: 1.4em;
+                            text-align: center;
+                            position: absolute;
+                            top: 16px;
+                            left: 50%;
+                            margin-left: -25px;
+                            background-color: #999999;
+                            z-index: 100;
+                            border-top-right-radius: 50%;
+                            border-top-left-radius: 50%;
+                            border-bottom-right-radius: 50%;
+                            border-bottom-left-radius: 50%;
+                        }
+                        .timeline > li.timeline-inverted > .timeline-panel {
+                            float: right;
+                        }
+                        .timeline > li.timeline-inverted > .timeline-panel:before {
+                            border-left-width: 0;
+                            border-right-width: 15px;
+                            left: -15px;
+                            right: auto;
+                        }
+                        .timeline > li.timeline-inverted > .timeline-panel:after {
+                            border-left-width: 0;
+                            border-right-width: 14px;
+                            left: -14px;
+                            right: auto;
+                        }
+                        .timeline-badge.primary {
+                            background-color: #2e6da4 !important;
+                        }
+                        .timeline-badge.success {
+                            background-color: #3f903f !important;
+                        }
+                        .timeline-badge.warning {
+                            background-color: #f0ad4e !important;
+                        }
+                        .timeline-badge.danger {
+                            background-color: #d9534f !important;
+                        }
+                        .timeline-badge.info {
+                            background-color: #5bc0de !important;
+                        }
+                        .timeline-title {
+                            margin-top: 0;
+                            color: inherit;
+                        }
+                        .timeline-body > p,
+                        .timeline-body > ul {
+                            margin-bottom: 0;
+                        }
+                        .timeline-body > p + p {
+                            margin-top: 5px;
+                        }
+                        @media (max-width: 767px) {
+                            ul.timeline:before {
+                                left: 40px;
+                            }
+                            ul.timeline > li > .timeline-panel {
+                                width: calc(100% - 90px);
+                                width: -moz-calc(100% - 90px);
+                                width: -webkit-calc(100% - 90px);
+                            }
+                            ul.timeline > li > .timeline-badge {
+                                left: 15px;
+                                margin-left: 0;
+                                top: 16px;
+                            }
+                            ul.timeline > li > .timeline-panel {
+                                float: right;
+                            }
+                            ul.timeline > li > .timeline-panel:before {
+                                border-left-width: 0;
+                                border-right-width: 15px;
+                                left: -15px;
+                                right: auto;
+                            }
+                            ul.timeline > li > .timeline-panel:after {
+                                border-left-width: 0;
+                                border-right-width: 14px;
+                                left: -14px;
+                                right: auto;
+                            }
+                        }
+                    </style>
+                    <div class="timeline-container">
+                        <ul class="timeline">
+                            <!-- li > div:nth(1).class { warning - orange danger - red  info - blue success - green } -->
+                            <!--
+blue - In dev
+green - done
+orange - planned
+gray - unknown
+red - not planned
+-->
+                            <li>
+                                <div class="timeline-badge info"><i class="fa fa-cogs"></i></div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4 class="timeline-title">Bootloader</h4>
+<!--  <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11 hours ago via Twitter</small></p> -->
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p>The bootloader is the essential part of any operating system. Without it the operating system wouldn't even be able to boot</p>
+                                        <hr>
+                                        <p><b>Status:&nbsp;</b>currently a barebones bootloader (<code>barebones/</code>) is in production. A partial bootloader on the <code>master/</code> branch is in progress.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                             <li class="timeline-inverted">
+                                <div class="timeline-badge"><i class="fa fa-terminal"></i></div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4 class="timeline-title">Kernel / IPC</h4>
+<!--  <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11 hours ago via Twitter</small></p> -->
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p>IPC or <b>Inter-Process Communication</b> is the mechanisms which allows processes, hosted by the OS, to communicate with either the kernel, or seperate process themselves.</p>
+                                        <hr>
+                                        <p><b>Status:&nbsp;</b>IPC development will begin after various other mechanisms have been developed</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="success" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2>About</h2>
+                        <hr class="star-light">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-lg-offset-2">
+                        <p>Avacad<b>os</b>, stylized as AvocadOS, is a minimal operating system designed to run almost pure jQuery.</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <p>I'll write some stuff later</p>
+                    </div>
+                    <div class="col-lg-8 col-lg-offset-2 text-center">
+                        <a href="http://github.com/jQueryOS/AvocadOS" class="btn btn-lg btn-outline">
+                            <i class="fa fa-github"></i> Check Out on Github
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2>Contact Me</h2>
+                        <hr class="star-primary">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+                        <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+                        <form name="sentMessage" id="contactForm" novalidate>
+                            <div class="row control-group">
+                                <div class="form-group col-xs-12 floating-label-form-group controls">
+                                    <label>Name</label>
+                                    <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="row control-group">
+                                <div class="form-group col-xs-12 floating-label-form-group controls">
+                                    <label>Email Address</label>
+                                    <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="row control-group">
+                                <div class="form-group col-xs-12 floating-label-form-group controls">
+                                    <label>Phone Number</label>
+                                    <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="row control-group">
+                                <div class="form-group col-xs-12 floating-label-form-group controls">
+                                    <label>Message</label>
+                                    <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <br>
+                            <div id="success"></div>
+                            <div class="row">
+                                <div class="form-group col-xs-12">
+                                    <button type="submit" class="btn btn-success btn-lg">Send</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center">
+            <div class="footer-above">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col col-md-4">
+                            <h3>Location</h3>
+                            <p>1234 Avocado Island<br>jQuery, JS 12345</p>
+                        </div>
+                        <div class="footer-col col-md-4">
+                            <h3>Around the Web</h3>
+                            <ul class="list-inline">
+                                <li>
+                                    <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-col col-md-4">
+                            <h3>About AvocadOS</h3>
+                            <p>random filler text, remind me to fix this later</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-below">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            Copyright &copy; jQueryOS 2016
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+        <div class="scroll-top page-scroll visible-xs visible-sm">
+            <a class="btn btn-primary" href="#page-top">
+                <i class="fa fa-chevron-up"></i>
+            </a>
+        </div>
+
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- Plugin JavaScript -->
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+        <script src="js/classie.js"></script>
+        <script src="js/cbpAnimatedHeader.js"></script>
+
+        <!-- Contact Form JavaScript -->
+        <script src="js/jqBootstrapValidation.js"></script>
+        <script src="js/contact_me.js"></script>
+
+        <!-- Custom Theme JavaScript -->
+        <script src="js/freelancer.js"></script>
+
+    </body>
+
 </html>
