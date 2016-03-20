@@ -5,14 +5,30 @@
         "Status": "Completed",
         "Icon": "cogs"
     },
-    
+
     {
-        "Title": "Kernel / IPC",
-        "Text": "IPC or <b>Inter-Process Communication</b> is the mechanisms which allows processes, hosted by the OS, to communicate with either the kernel, or seperate process themselves.",
-        "StatusText": "IPC development will begin after various other mechanisms have been developed",
-        
-        "Status": "Unknown",
+        "Title": "Basic Kernel",
+        "Text": "A basic kernel which has a simple terminal or prompt.",
+        "StatusText": "The kernel is still being worked upon. It is currently very bare-bones",
+        "Status": "In Dev",
         "Icon": "terminal",
         "Side": "Right"
+    },
+    
+    {
+        "Title": "Basic shell",
+        "Text": "A shell which can take input and show some output. Supporting newlines, and scolling.",
+        "StatusText": "A barebones version is available in <code>barebones/</code> or <code>meaty-skeleton/</code>",
+        "Status": "Completed",
+        "Icon": "terminal",
+        "Side": "Right",
+    },
+    
+    {
+        "Title": "Meaty Skeleton",
+        "Text": "A less-barebones OS, with the basic C libraries. This is currently located in the <a href=\"https://github.com/jQueryOS/AvocadOS/tree/meaty-skeleton\"><code>meaty-skeleton/</code> branch.</a>",
+        "StatusText": "",
+        "Status": "In Dev",
+        "Icon": "wrench"
     }
 ]
