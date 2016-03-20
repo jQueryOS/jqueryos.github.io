@@ -21,13 +21,12 @@
         "StatusText": "A barebones version is available in <code>barebones/</code> or <code>meaty-skeleton/</code>",
         "Status": "Completed",
         "Icon": "terminal",
-        "Side": "Right",
+        "Side": "Right"
     },
     
     {
         "Title": "Meaty Skeleton",
-        "Text": "A less-barebones OS, with the basic C libraries. This is currently located in the <a href=\"https://github.com/jQueryOS/AvocadOS/tree/meaty-skeleton\"><code>meaty-skeleton/</code> branch.</a>",
-        "StatusText": "",
+        "Text": "A less-barebones OS, with the basic C libraries. This is currently located in the <a href=\"https://github.com/jQueryOS/AvocadOS/tree/meaty-skeleton\"><code>meaty-skeleton/</code></a> branch.",
         "Status": "In Dev",
         "Icon": "wrench"
     }
