@@ -277,7 +277,7 @@
                                 <span><span class="color-preview" style="background: #999999"></span>Unknown</span>
                             </p>
                         </div>
-                        <ul class="timeline">
+                        <ul id="roadmapobject" class="timeline">
                             <!-- li > div:nth(1).class { warning - orange danger - red  info - blue success - green } -->
                             <!--
 Green - Done 
@@ -286,36 +286,38 @@ Orange - Planned
 Red - Not planned 
 Gray - Unknown
 -->
-                            <li>
-                                <div class="timeline-badge info"><i class="fa fa-cogs"></i></div>
-                                <div class="timeline-panel">
-                                    <div class="timeline-heading">
-                                        <h4 class="timeline-title">Bootloader</h4>
-                                        <!--  <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11 hours ago via Twitter</small></p> -->
-                                    </div>
-                                    <div class="timeline-body">
-                                        <p>The bootloader is the essential part of any operating system. Without it the operating system wouldn't even be able to boot</p>
-                                        <hr>
-                                        <p><b>Status:&nbsp;</b>currently a barebones bootloader (<code>barebones/</code>) is in production. A partial bootloader on the <code>master/</code> branch is in progress.</p>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="timeline-inverted">
-                                <div class="timeline-badge"><i class="fa fa-terminal"></i></div>
-                                <div class="timeline-panel">
-                                    <div class="timeline-heading">
-                                        <h4 class="timeline-title">Kernel / IPC</h4>
-                                        <!--  <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11 hours ago via Twitter</small></p> -->
-                                    </div>
-                                    <div class="timeline-body">
-                                        <p>IPC or <b>Inter-Process Communication</b> is the mechanisms which allows processes, hosted by the OS, to communicate with either the kernel, or seperate process themselves.</p>
-                                        <hr>
-                                        <p><b>Status:&nbsp;</b>IPC development will begin after various other mechanisms have been developed</p>
-                                    </div>
-                                </div>
-                            </li>
                         </ul>
+                        <script type="text/javascript">
+                            (function() {
+                                var req = new XMLHttpRequest();
+                                req.onreadystatechange = function() {
+                                    if (req.readyState === 4) {
+                                        var r = JSON.parse(req.responseText);
+                                        console.log(r, req);
+                                        r.forEach(function(item) {
+                                            /*
+                                            Title, Text, StatusText, Status, Icon
+                                            */
+                                            var side = item.hasOwnProperty("Side") ? item.Side === "Right" ? ' class="timeline-inverted"' : "" : "";
+                                            var icon = item.hasOwnProperty("Icon") ? ' class="fa fa-'+item.Icon+'"' : '';
+                                            var title= item.hasOwnProperty("Title")? item.Title : "Unknown";
+                                            var text = item.hasOwnProperty("Text") ? item.Text : "No details known";
+                                            var status_text= item.hasOwnProperty("StatusText") ? item.StatusText : "";
+                                            var status = item.hasOwnProperty("Status") ? {
+                                                "Completed": "success",
+                                                "In Dev": "info",
+                                                "Planned": "warning",
+                                                "Not Planned": "danger",
+                                                "Unknown": ""
+                                            }[item.Status.trim()] : "";
+                                            document.getElementById("roadmapobject").innerHTML += '<li ' + side +'><div class="timeline-badge '+status+'"><i '+icon+'></i></div><div class="timeline-panel"><div class="timeline-heading"><h4 class="timeline-title">'+title+'</h4></div><div class="timeline-body"><p>'+text+'</p>'+(status_text?'<hr><p><b>Status:&nbsp;</b>'+status_text+'</p>':'')+'</div></div></li>';
+                                        });
+                                    }
+                                };
+                                req.open("GET", "timeline.json");
+                                req.send();
+                            }());
+                        </script>
                     </div>
 
 

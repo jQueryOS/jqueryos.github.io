@@ -1,0 +1,18 @@
+[
+    {
+        "Title": "Bootloader",
+        "Text": "The bootloader is the essential part of any operating system. Without it the operating system wouldn't even be able to boot",
+        "Status": "Completed",
+        "Icon": "cogs"
+    },
+    
+    {
+        "Title": "Kernel / IPC",
+        "Text": "IPC or <b>Inter-Process Communication</b> is the mechanisms which allows processes, hosted by the OS, to communicate with either the kernel, or seperate process themselves.",
+        "StatusText": "IPC development will begin after various other mechanisms have been developed",
+        
+        "Status": "Unknown",
+        "Icon": "terminal",
+        "Side": "Right"
+    }
+]
