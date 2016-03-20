@@ -29,5 +29,27 @@
         "Text": "A less-barebones OS, with the basic C libraries. This is currently located in the <a href=\"https://github.com/jQueryOS/AvocadOS/tree/meaty-skeleton\"><code>meaty-skeleton/</code></a> branch.",
         "Status": "In Dev",
         "Icon": "wrench"
+    },
+    
+    {
+        "Title": "Standard libraries",
+        "Text": "By cross-compiling standard libraries with gcc, AvocadOS will be able to execute x86 binaries",
+        "Status": "Planned",
+        "Icon": "book",
+        "Side": "Right"
+    },
+    
+    {
+        "Title": "SpiderMonkey",
+        "Text": "SpiderMonkey 36's binaries and other can be cross compiled on top of the standard libraries. This will allow SpiderMonkey to run as a powerful backend of the OS",
+        "Status": "",
+        "Icon": "book",
+        "Side": "Right"
+    },
+    
+    {
+        "Title": "Full-Resolution GUI / Display",
+        "Text": "Currently, the bootloader uses the VGA Video Memory, as a simple way to display things. This can be quite limiting as colors are very limited along with resolution.",
+        "Icon": "desktop"
     }
 ]
