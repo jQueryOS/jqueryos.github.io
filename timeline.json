@@ -10,7 +10,7 @@
         "Title": "Basic Kernel",
         "Text": "A basic kernel which has a simple terminal or prompt.",
         "StatusText": "The kernel is still being worked upon. It is currently very bare-bones",
-        "Status": "In Dev",
+        "Status": "Completed",
         "Icon": "terminal",
         "Side": "Right"
     },
@@ -19,7 +19,7 @@
         "Title": "Basic shell",
         "Text": "A shell which can take input and show some output. Supporting newlines, and scolling.",
         "StatusText": "A barebones version is available in <code>barebones/</code> or <code>meaty-skeleton/</code>",
-        "Status": "Completed",
+        "Status": "In Dev",
         "Icon": "terminal",
         "Side": "Right"
     },
@@ -27,14 +27,14 @@
     {
         "Title": "Meaty Skeleton",
         "Text": "A less-barebones OS, with the basic C libraries. This is currently located in the <a href=\"https://github.com/jQueryOS/AvocadOS/tree/meaty-skeleton\"><code>meaty-skeleton/</code></a> branch.",
-        "Status": "In Dev",
+        "Status": "Completed",
         "Icon": "wrench"
     },
     
     {
         "Title": "Standard libraries",
         "Text": "By cross-compiling standard libraries with gcc, AvocadOS will be able to execute x86 binaries",
-        "Status": "Planned",
+        "Status": "In Dev",
         "Icon": "book",
         "Side": "Right"
     },
@@ -42,6 +42,7 @@
     {
         "Title": "V8",
         "Text": "V8's binaries and other can be cross compiled on top of the standard libraries. This will allow V8 to run as a powerful backend of the OS",
+        "Status": "Planned",
         "Icon": "code",
         "Side": "Right"
     },
