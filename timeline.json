@@ -40,8 +40,8 @@
     },
     
     {
-        "Title": "SpiderMonkey",
-        "Text": "SpiderMonkey 36's binaries and other can be cross compiled on top of the standard libraries. This will allow SpiderMonkey to run as a powerful backend of the OS",
+        "Title": "V8",
+        "Text": "V8's binaries and other can be cross compiled on top of the standard libraries. This will allow V8 to run as a powerful backend of the OS",
         "Icon": "code",
         "Side": "Right"
     },
