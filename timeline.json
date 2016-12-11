@@ -10,7 +10,7 @@
         "Title": "Basic Kernel",
         "Text": "A basic kernel which has a simple terminal or prompt.",
         "StatusText": "The kernel is still being worked upon. It is currently very bare-bones",
-        "Status": "Completed",
+        "Status": "In Dev",
         "Icon": "terminal",
         "Side": "Right"
     },
